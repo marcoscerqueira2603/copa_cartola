@@ -107,6 +107,33 @@ with tab1:
     # Obter rodadas únicas
     rodadas = confrontos_a['Rodada'].unique()
     resultados_a = resultados_a.replace({None: ''})
+
+    st.markdown("""
+                <style>
+                .confronto {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    border-bottom: 1px solid #ccc;
+                }
+                .confronto div {
+                    flex: 1;
+                    text-align: center;
+                }
+                .confronto div:nth-child(1), .confronto div:nth-child(5) {
+                    flex: 2;
+                }
+                @media (max-width: 768px) {
+                    .confronto {
+                        flex-direction: column;
+                    }
+                    .confronto div {
+                        text-align: left;
+                    }
+                }
+                </style>
+                """, unsafe_allow_html=True)
     for rodada in rodadas:
         st.markdown("---") 
         st.subheader(f'**{rodada}**')
@@ -123,39 +150,17 @@ with tab1:
             # Obter os resultados_a dos times para a rodada
             pontos_casa = resultados_a.loc[resultados_a['Time'].str.strip() == time_casa, rodada].values[0]
             pontos_visitante = resultados_a.loc[resultados_a['Time'].str.strip() == time_visitante, rodada].values[0]
-            st.markdown("""
-                        <style>
-                        .confronto {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding: 10px;
-                            border-bottom: 1px solid #ccc;
-                        }
-                        .confronto div {
-                            flex: 1;
-                            text-align: center;
-                        }
-                        .confronto div:nth-child(1), .confronto div:nth-child(5) {
-                            flex: 2;
-                        }
-                        @media (max-width: 768px) {
-                            .confronto {
-                                flex-direction: column;
-                            }
-                            .confronto div {
-                                text-align: left;
-                            }
-                        }
-                        </style>
-                        <div class="confronto">
-                            <div><b>{time_casa}</b></div>
-                            <div>{str(pontos_casa)}</div>
-                            <div>X</div>
-                            <div>{str(pontos_visitante)}</div>
-                            <div><b>{time_visitante}</b></div>
-                        </div>
-                        """, unsafe_allow_html=True)
+
+
+            st.markdown(f"""
+                <div class="confronto">
+                    <div><b>{time_casa}</b></div>
+                    <div>{str(pontos_casa)}</div>
+                    <div>X</div>
+                    <div>{str(pontos_visitante)}</div>
+                    <div><b>{time_visitante}</b></div>
+                </div>
+                """, unsafe_allow_html=True)
             #col1, col2, col3, col4, col5 = st.columns([2, 1, 1, 1, 2])
             #with col1:
              #   st.write(f"**{time_casa}**")
