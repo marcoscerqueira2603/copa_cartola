@@ -1,0 +1,15 @@
+openpyxl
+pip
+lxml
+pytest
+tk
+pillow
+tox
+gspread
+drive
+oauth2client
+plotly
+seaborn
+scipy
+numpy
+
