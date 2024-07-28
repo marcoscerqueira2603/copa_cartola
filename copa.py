@@ -122,7 +122,7 @@ with tab1:
             pontos_casa = resultados_a.loc[resultados_a['Time'].str.strip() == time_casa, rodada].values[0]
             pontos_visitante = resultados_a.loc[resultados_a['Time'].str.strip() == time_visitante, rodada].values[0]
             
-            col1, col2, col3, col4, col5 = st.columns(5)
+            col1, col2, col3, col4, col5 = st.columns([2, 1, 1, 1, 2])
             with col1:
                 st.write(f"**{time_casa}**")
             with col2:
