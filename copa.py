@@ -21,7 +21,7 @@ client = gspread.authorize(creds)
 
 st.set_page_config(
     page_title="Copa PB",
-    layout="centered"
+    layout="wide"
 )
 
 @st.cache_data(ttl=20)
