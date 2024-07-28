@@ -86,7 +86,7 @@ def atualizar_tabela(tabela, resultados, confrontos):
         tabela.at[time_visitante, 'Saldo'] += (pontos_visitante - pontos_casa)
 
 def df_to_html(df):
-    html = '<div style="width: 60%; margin-left: 0%; padding: 10px;">'  # Ajustar a largura e margem esquerda
+    html = '<div style="width: 80%; margin-left: 0%; padding: 10px;">'  # Ajustar a largura e margem esquerda
     html += '<table style="width: 100%; border-collapse: collapse;">'
     html += '<thead>'
     html += '<tr>'
