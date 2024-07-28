@@ -43,6 +43,8 @@ resultados = load_data1(st.secrets["resultados"])
 
 
 
+
+
 st.title('Copa Planeta dos Boleiros')
 
 tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8, =  st.tabs(['Grupo A','Grupo B','Grupo C','Grupo D','Grupo E','Grupo F','Grupo G','Grupo H'])
@@ -121,18 +123,50 @@ with tab1:
             # Obter os resultados_a dos times para a rodada
             pontos_casa = resultados_a.loc[resultados_a['Time'].str.strip() == time_casa, rodada].values[0]
             pontos_visitante = resultados_a.loc[resultados_a['Time'].str.strip() == time_visitante, rodada].values[0]
-            
-            col1, col2, col3, col4, col5 = st.columns([2, 1, 1, 1, 2])
-            with col1:
-                st.write(f"**{time_casa}**")
-            with col2:
-                st.write(str(pontos_casa))  # Converter pontos para string
-            with col3:
-                st.write('X')
-            with col4:
-                st.write(str(pontos_visitante))  # Converter pontos para string
-            with col5:
-                st.write(f"**{time_visitante}**")
+            st.markdown("""
+                        <style>
+                        .confronto {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        .confronto div {
+                            flex: 1;
+                            text-align: center;
+                        }
+                        .confronto div:nth-child(1), .confronto div:nth-child(5) {
+                            flex: 2;
+                        }
+                        @media (max-width: 768px) {
+                            .confronto {
+                                flex-direction: column;
+                            }
+                            .confronto div {
+                                text-align: left;
+                            }
+                        }
+                        </style>
+                        <div class="confronto">
+                            <div><b>{time_casa}</b></div>
+                            <div>{str(pontos_casa)}</div>
+                            <div>X</div>
+                            <div>{str(pontos_visitante)}</div>
+                            <div><b>{time_visitante}</b></div>
+                        </div>
+                        """, unsafe_allow_html=True)
+            #col1, col2, col3, col4, col5 = st.columns([2, 1, 1, 1, 2])
+            #with col1:
+             #   st.write(f"**{time_casa}**")
+            #with col2:
+             #   st.write(str(pontos_casa))  # Converter pontos para string
+            #with col3:
+            #    st.write('X')
+            #with col4:
+            #    st.write(str(pontos_visitante))  # Converter pontos para string
+            #with col5:
+            #    st.write(f"**{time_visitante}**")
 
 with tab2:
     resultados_b = resultados[resultados['Grupo'] == "B"]
