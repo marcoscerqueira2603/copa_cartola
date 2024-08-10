@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "neural-entropy-380504",
+  "private_key_id": "b54c8a0b4a054a07b49ffa643a46caaeb02df6c8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6KVdNoZEBqNiG\n9VFGOnVbiEnICX3BsOFNTDWXk0L3c//ivwbNB1oGXE2VvxUGo3eHVwcoZplZq4D8\nOklQSocK1xUoGX3Ytq1c9iNErqky9Pw6CKHUnXsVrrZc5SAbfGnETzphdx7HhMbK\nayVp7wzxN0O3cEiz36gn8gxUB2J5lbjrMwWJZ14eq0HNM7vFPLhRBWaP3deEdl7/\nD8AMa/R+A6nWMxXt6Bm69M7nF9/xing/TMQxCEg491CFX7EiSme1hlBUCLpAcYsb\n2VRulLI00zNJ4kdoB4vBZQPueJ/RQr/3eM4ZXm+Zoh/mT+PND2PoAI0QvCXgAZNr\nr4bWIrQDAgMBAAECggEADOPhU/jf4dXV2sM9LVgAs0weRVfrsymZWCRZDtWw2XiM\nDqCVvhGhv3bM6nvQkjHODEfpSqtcBMD8c+3HQ/3jfuUosl4D5qmATinYhFN08Zg6\ndMkPOsa5J8wXe+djnNoCN6Hl+kS1k8qGVBLHBIau0zvPGD8R0atzz2kSE6lu1wzg\nBtV4xSbMuYB1zJUr2yyVjkHhncay7ylmX0h02+q+5jrVftO5EiiLXhspPomoPOsy\n68QvWLTezckyeYrWEq4IyH70ja5VcUzidDenlyAcYh0Q6gOVWqJap8g4MRiXrpLz\nY6FV5Eq8xqXKDbXNUfJ6qpj/Iu1w7kObUV+/Z1icyQKBgQD0hzmbmm2CmOUp+h1K\nXDsrYA6dkMOJiAVyL+TuBQ/d2eJ/+IQ43BumAZtGHhkyXBwKEWZbNgoa5mC1XrDc\n4LKeROL6QXVy/8H3zuONqCkxbGvUQl8AJTVUAvQGkFzq74YiqM+V2WkC64sk1px9\n+PuD3nmLADxKcuy3GCo8sXHqWQKBgQDC5SI3t+JPzuMLZ804rY1ZCcuVwKynEj+t\n9xy7Rd8dNveQBx+igHbzK8/HxWsJ+sJ6oEo1//Ng/SH3mYj68xNqAM0dDCf47nj4\nLfol6ZDNqA8azEugxB78dliTR9kmnpR6aSmtolB+vSpdSfv9QdHB6G53VgT2TSNN\nuBAuenYNuwKBgBXYiuYC6uuy+y4/4SQGj2a1oziieUWtOEdWTg6RtzQrxheGvVFT\nIMk49YVTJQ8huYOQwGM/tbFniZZKimSBUpPfNaQD+xk2Dj80ZZH/RwbaV9vTvicG\nK/iAdwqrFRIMKiCokjsh/Ea9gmXdIogCmX3Tf2pSsBA6qjlFWGiptbKpAoGATEgI\nu4wyfRA513X6YguzvjzSPTvbl8zRtdJ5oWb4q+Oew/W10RG8/PKR8dv4SECoq/xe\n74HNjZGmINYsQiSv3ZaQsaTXZFxaZrEALqSbc5Mqzk9V7oe0pRXhF0xQ1wfMj5jn\nojlcji6WDUtu4LJJWj8SNY0qhgitH7dCRh7SZA8CgYEA4+oLy0Ihrys7z7twkgCd\nRKbkMMOfgLFHemNWWrN8CELHLl2EK3H+wzi33g9tSoHx58f5fid+WHcSQLcFfiKm\nCHCnonEqWbt3512YyJXqcG3gfdRXUWInOT/DJyHA0kI/emmcTawojW32hnS6E9aK\nE1EjtgOtbV3qsxoDg9uUUp8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "marcos-cerqueira@neural-entropy-380504.iam.gserviceaccount.com",
+  "client_id": "115294411507256273857",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/marcos-cerqueira%40neural-entropy-380504.iam.gserviceaccount.com"
+}
