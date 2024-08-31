@@ -136,6 +136,18 @@ with tab1:
 
     
     html_table_a = df_to_html(tabela_a)
+
+    html_table_a = f"""
+        <style>
+            table, th, td {{
+                color: black !important;
+            }}
+            th {{
+                background-color: white !important;
+            }}
+        </style>
+        {html_table_a}
+        """
     st.markdown(html_table_a, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -225,6 +237,18 @@ with tab2:
 
     
     html_table_b = df_to_html(tabela_b)
+
+    html_table_b = f"""
+        <style>
+            table, th, td {{
+                color: black !important;
+            }}
+            th {{
+                background-color: white !important;
+            }}
+        </style>
+        {html_table_b}
+        """
     st.markdown(html_table_b, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -315,6 +339,18 @@ with tab3:
 
     
     html_table_c = df_to_html(tabela_c)
+
+    html_table_c = f"""
+            <style>
+                table, th, td {{
+                    color: black !important;
+                }}
+                th {{
+                    background-color: white !important;
+                }}
+            </style>
+            {html_table_c}
+            """
     st.markdown(html_table_c, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -404,6 +440,18 @@ with tab4:
 
     
     html_table_d = df_to_html(tabela_d)
+
+    html_table_d = f"""
+        <style>
+            table, th, td {{
+                color: black !important;
+            }}
+            th {{
+                background-color: white !important;
+            }}
+        </style>
+        {html_table_d}
+        """
     st.markdown(html_table_d, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -492,6 +540,18 @@ with tab5:
 
     
     html_table_e = df_to_html(tabela_e)
+
+    html_table_e = f"""
+        <style>
+            table, th, td {{
+                color: black !important;
+            }}
+            th {{
+                background-color: white !important;
+            }}
+        </style>
+        {html_table_e}
+        """
     st.markdown(html_table_e, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -581,6 +641,18 @@ with tab6:
 
     
     html_table_f = df_to_html(tabela_f)
+
+    html_table_f = f"""
+            <style>
+                table, th, td {{
+                    color: black !important;
+                }}
+                th {{
+                    background-color: white !important;
+                }}
+            </style>
+            {html_table_f}
+            """
     st.markdown(html_table_f, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -670,6 +742,18 @@ with tab7:
 
     
     html_table_g = df_to_html(tabela_g)
+
+    html_table_g = f"""
+        <style>
+            table, th, td {{
+                color: black !important;
+            }}
+            th {{
+                background-color: white !important;
+            }}
+        </style>
+        {html_table_g}
+        """
     st.markdown(html_table_g, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
@@ -759,6 +843,18 @@ with tab8:
 
     
     html_table_h = df_to_html(tabela_h)
+
+    html_table_h = f"""
+        <style>
+            table, th, td {{
+                color: black !important;
+            }}
+            th {{
+                background-color: white !important;
+            }}
+        </style>
+        {html_table_h}
+        """
     st.markdown(html_table_h, unsafe_allow_html=True)
     
     st.markdown('## **Confrontos**')
